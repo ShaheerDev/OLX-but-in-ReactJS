@@ -83,7 +83,7 @@ class LoggedHome extends React.Component {
           <>
               <Logo />
               <Searchbar />
-              <a href="/postform">
+              <a href="/createadd">
               <button className="sellbtn">Sell</button>
               </a>
               <Coverphoto />
