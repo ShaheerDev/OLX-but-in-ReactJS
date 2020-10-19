@@ -7,7 +7,7 @@ import Sellbtn from './sellbtn'
 import Coverphoto from './coverphoto'
 import Categories from'./categories'
 
-class LoggedHome extends React.Component {
+class Home extends React.Component {
   constructor(props) {
       super(props)
       this.state = {
@@ -97,4 +97,4 @@ class LoggedHome extends React.Component {
   }
 }
 
-export default LoggedHome;
+export default Home;
