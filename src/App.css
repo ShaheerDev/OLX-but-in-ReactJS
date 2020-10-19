@@ -1,0 +1,596 @@
+body {
+  overflow-x: hidden;
+}
+
+.sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 1250px;
+    width: 250px;
+    height: 35px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+
+  .sellbtn:hover {
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+  }
+
+
+.coverpic {
+  position: absolute;
+  top: 120px;
+  left: 1px;
+  overflow-x: hidden;
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+  position: absolute;
+  top: 70px;
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.Adspost {
+  position: absolute;
+  top: 450px;
+  left: 80px;
+}
+
+.floatleft {
+  float: left;
+}
+
+#loginform {
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 200px;
+  left: 550px;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+.form-style-2{
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+.form-style-2 label{
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+  width: 100px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+.form-style-2 span.required{
+  color:red;
+}
+.form-style-2 .tel-number-field{
+  width: 40px;
+  text-align: center;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+  width: 48%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+.form-style-2 .select-field{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+  border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+  height:100px;
+  width: 48%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+  border: none;
+  padding: 8px 15px 8px 15px;
+  background: #FF8500;
+  color: #fff;
+  box-shadow: 1px 1px 4px #DADADA;
+  -moz-box-shadow: 1px 1px 4px #DADADA;
+  -webkit-box-shadow: 1px 1px 4px #DADADA;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+  background: #EA7B00;
+  color: #fff;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background-color: #555;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+}
+
+.olxlogo {
+  position: "absolute";
+  left: "50px";
+  top: "20px";
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+top: 150px;
+right: 600px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+background-color: #4CAF50;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: cornflowerblue;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+#container {
+position: absolute;
+left: 550px;
+top: 100px;
+}
+
+#signupForm {
+position: fixed;
+top: 150px;
+right: 600px;
+border: 3px solid #f1f1f1;
+}
+
+.searchbtn {
+  position: absolute;
+  left: 1156px;
+  top: 20px;
+  height:37px;
+  width: 50px
+}
+
+#divimportant {
+  position:absolute; 
+  top:400; 
+  left:150; 
+  float: left;
+}
+
+@media only screen and (max-width: 1600px) {
+  .searchbtn {
+    position: absolute;
+    left: 1096px;
+    top: 20px;
+  }
+
+  .topnav {
+    width: 1800px;
+  }
+}
+
+.searchbox {
+  position: absolute; 
+  left: 240px;
+  top: 20px; 
+  resize: none
+}
+
+@media only screen and (max-width: 1360px) {
+  .searchbtn {
+    position: absolute;
+    left: 996px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 150px;
+    top: 20px; 
+    resize: none
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 1100px;
+    width: 220px;
+  }
+
+  .topnav {
+    width: 1350px;
+  }
+
+}
+
+@media only screen and (max-width: 1255px) {
+  .searchbtn {
+    position: absolute;
+    left: 996px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 150px;
+    top: 20px; 
+    resize: none
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 1058px;
+    width: 150px;
+  }
+
+  .topnav {
+    width: 1350px;
+  }
+
+}
+
+@media only screen and (max-width: 1176px) {
+  .olxlogo {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+  }
+
+  .searchbtn {
+    position: absolute;
+    left: 650px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 270px;
+    top: 20px; 
+    resize: none;
+    width: 400px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 758px;
+    width: 250px;
+  }
+
+  .topnav {
+    width: 1070px;
+  }
+
+}
+
+@media only screen and (max-width: 932px) {
+  .olxlogo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .searchbtn {
+    position: absolute;
+    left: 550px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 170px;
+    top: 20px; 
+    resize: none;
+    width: 400px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 658px;
+    width: 200px;
+  }
+
+  .topnav {
+    width: 930px;
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+  .olxlogo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .searchbtn {
+    position: absolute;
+    left: 450px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 150px;
+    top: 20px; 
+    resize: none;
+    width: 300px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 508px;
+    width: 200px;
+  }
+
+  .topnav {
+    width: 930px;
+  }
+
+}
+
+@media only screen and (max-width: 582px) {
+  .searchbtn {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 100px;
+    top: 20px; 
+    resize: none;
+    width: 200px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 390px;
+    width: 150px;
+  }
+
+  .topnav {
+    width: 600px;
+  }
+
+  .coverpic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .searchbtn {
+    position: absolute;
+    left: 220px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 120px;
+    top: 20px; 
+    resize: none;
+    width: 120px;
+  }
+
+  .topnav {
+    width: 450px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    width: 150px;
+  }
+
+  .coverpic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .olxlogo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+  }
+  
+  .searchbtn {
+    position: absolute;
+    left: 200px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 80px;
+    top: 20px; 
+    resize: none;
+    width: 120px;
+  }
+
+  .topnav {
+    width: 380px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    width: 100px;
+  }
+
+  .coverpic {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    overflow-x: scroll;
+  }
+
+  .olxlogo {
+    display: none;
+  }
+  
+  .searchbtn {
+    position: absolute;
+    left: 120px;
+    top: 20px;
+  }
+
+  .searchbox {
+    position: absolute; 
+    left: 10px;
+    top: 20px; 
+    resize: none;
+    width: 120px;
+  }
+
+  .topnav {
+    width: 380px;
+  }
+
+  .sellbtn {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    width: 100px;
+  }
+
+  .coverpic {
+    display: none;
+  }
+}
