@@ -38,7 +38,7 @@ export default class Postform extends React.Component {
         category: document.getElementById("category").value,
         condition: document.getElementById("condition").value,
         username: document.getElementById("username").value,
-        usernumber: document.getElementById("numbercode").value + "" + document.getElementById("usernumber").value,
+        usernumber: document.getElementById("numbercode").value + " " + document.getElementById("usernumber").value,
         postdescription: document.getElementById("description").value
         }
         firebase.database().ref("userads" + key).set(postad);
