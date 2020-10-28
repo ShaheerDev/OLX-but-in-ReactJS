@@ -57,7 +57,7 @@ export default class Postform extends React.Component {
     <form action method="post">
       <label htmlFor="field1"><span>Item Name <span className="required">*</span></span><input type="text" className="input-field" name="field1" id="postname" /></label>
       <label htmlFor="field2"><span>Item Price <span className="required">*</span></span><input type="text" className="input-field" name="field2"  id="postprice" /></label>
-      <label htmlFor="field2"><span>Condition <span className="required">*</span></span><select style={{width: 240, height: 20}} id="condition"><option value="Old">Old</option><option value="New">New</option></select></label>
+      <label htmlFor="field2"><span>Condition <span className="required">*</span></span><select style={{width: 190, height: 20}} id="condition"><option value="Old">Old</option><option value="New">New</option></select></label>
       <label htmlFor="field2"><span>Category <span className="required">*</span></span>
         <select id="category">
           <option value="Mobile Phones">Mobile Phones</option>
@@ -76,9 +76,9 @@ export default class Postform extends React.Component {
           <option value="Land and Plots">Land and Plots</option>
         </select>
       </label>
-      <progress id="fileprogress" max={100} style={{width: 130}}> </progress>
+      <progress id="fileprogress" max={100} style={{width: 75}}> </progress>
       <label htmlFor="field2"><span>Picture <span className="required">*</span></span><input type="file" className="input-field" name="field2" accept="image/*" id="filebutton" required /></label>
-      <label htmlFor="field2"><span>Ad Location <span className="required">*</span></span><select id="location"><option value="Pakistan">Pakistan</option><option value="India">India</option><option value="Canada">Canada</option></select></label>
+      <label htmlFor="field2"><span>Ad Location <span className="required">*</span></span><select id="location" style={{width: 180}}><option value="Pakistan">Pakistan</option><option value="India">India</option><option value="Canada">Canada</option></select></label>
       <label htmlFor="field2"><span>Your Name <span className="required">*</span></span><input type="text" className="input-field" name="field2"  id="username" /></label>
       <label htmlFor="field2"><span>Your Phone Number <span className="required">*</span></span><select style={{height: 30}} id="numbercode"><option value={92}>+92</option><option value={91}>+91</option><option value={1}>+1</option></select><input type="number" className="input-field" name="field2" defaultValue id="usernumber" placeholder="Omit any zeroes, brackets or dashes" /></label>
       <label htmlFor="field5"><span>Description <span className="required">*</span></span><textarea name="field5" className="textarea-field" id="description" defaultValue={""} /></label>
