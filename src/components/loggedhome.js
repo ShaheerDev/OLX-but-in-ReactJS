@@ -6,6 +6,7 @@ import Searchbar from './search'
 import Sellbtn from './sellbtn'
 import Coverphoto from './coverphoto'
 import Categories from'./categories'
+import Footer from'./footer'
 
 class LoggedHome extends React.Component {
   constructor(props) {
@@ -64,8 +65,12 @@ class LoggedHome extends React.Component {
       const div = document.createElement("div")
       div.setAttribute("id", category)
       div.setAttribute("class", "floatleft")
+      div.style.border = "4px solid white"
       div.style.width = "228px"
       div.style.height = "88px"
+      var hiddenspace = document.createElement("h4")
+      hiddenspace.innerHTML = "TEXT"
+      hiddenspace.style.visibility = "hidden";
       div.appendChild(img)
       div.appendChild(p)
       div.appendChild(pcondition)
@@ -74,6 +79,7 @@ class LoggedHome extends React.Component {
       ahref.appendChild(btn)
       div.appendChild(ahref)
       div.appendChild(pname)
+      div.appendChild(hiddenspace)
       document.getElementById("divimportant").appendChild(div)
       })
   }
@@ -89,9 +95,10 @@ class LoggedHome extends React.Component {
               <Coverphoto />
               <Categories />
               <div></div>
-              <div style={{ position:"absolute", top:400, left:150, float: "left" }} id="divimportant">
+              <div style={{ position:"absolute", top:420, left:100, float: "left" }} id="divimportant">
              
               </div>
+              <Footer />
           </>
       )
   }
