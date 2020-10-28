@@ -195,7 +195,7 @@ width: 280px;
 
 .olxlogo {
   position: "absolute";
-  left: "50px";
+  left: "20px";
   top: "20px";
 }
 
@@ -327,7 +327,7 @@ border: 3px solid #f1f1f1;
 
 }
 
-@media only screen and (max-width: 1255px) {
+@media only screen and (max-width: 1300px) {
   .searchbtn {
     position: absolute;
     left: 996px;
@@ -383,7 +383,7 @@ border: 3px solid #f1f1f1;
   }
 
   .topnav {
-    width: 1070px;
+    width: 1163px;
   }
 
 }
@@ -580,7 +580,7 @@ border: 3px solid #f1f1f1;
   }
 
   .topnav {
-    width: 380px;
+    width: 320px;
   }
 
   .sellbtn {
