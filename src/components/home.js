@@ -57,7 +57,7 @@ class Home extends React.Component {
       ahref.href = whatsapplink
       const btn = document.createElement("button")
       btn.style.backgroundColor = "green"
-      btn.style.width = "120px"
+      btn.style.width = "150px"
       btn.style.height = "20px"
       btn.innerHTML = usernumber
       const pname = document.createElement("p")
@@ -65,12 +65,9 @@ class Home extends React.Component {
       const div = document.createElement("div")
       div.setAttribute("id", category)
       div.setAttribute("class", "floatleft")
-      div.style.border = "5px solid white"
+      div.style.border = "4px solid white"
       div.style.width = "228px"
-      div.style.height = "88px"
-      var hiddenspace = document.createElement("h4")
-      hiddenspace.innerHTML = "TEXT"
-      hiddenspace.style.visibility = "hidden";
+      div.style.height = "450px"
       div.appendChild(img)
       div.appendChild(p)
       div.appendChild(pcondition)
@@ -79,7 +76,6 @@ class Home extends React.Component {
       ahref.appendChild(btn)
       div.appendChild(ahref)
       div.appendChild(pname)
-      div.appendChild(hiddenspace)
       document.getElementById("divimportant").appendChild(div)
       })
   }
@@ -92,8 +88,8 @@ class Home extends React.Component {
               <a href="/createadd">
               <button className="sellbtn">Sell</button>
               </a>
-              <Coverphoto />
               <Categories />
+              <Coverphoto />
               <div></div>
               <div style={{ position:"absolute", top:420, left:100, float: "left" }} id="divimportant">
              
