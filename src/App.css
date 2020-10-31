@@ -194,9 +194,9 @@ width: 280px;
 }
 
 .olxlogo {
-  position: "absolute";
-  left: "20px";
-  top: "20px";
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 
 /* The popup form - hidden by default */
@@ -386,6 +386,10 @@ border: 3px solid #f1f1f1;
     width: 1163px;
   }
 
+  #container {
+    position: absolute;
+    left: 350px;
+  }
 }
 
 @media only screen and (max-width: 932px) {
@@ -420,6 +424,15 @@ border: 3px solid #f1f1f1;
     width: 930px;
   }
 
+  #loginform {
+   position: absolute;
+   left: 300px;
+  }
+
+  #container {
+    position: absolute;
+    left: 250px;
+  }
 }
 
 @media only screen and (max-width: 740px) {
@@ -454,6 +467,15 @@ border: 3px solid #f1f1f1;
     width: 930px;
   }
 
+  #loginform {
+  position: absolute;
+  left: 150px;
+  }
+
+  #container {
+    position: absolute;
+    left: 150px;
+  }
 }
 
 @media only screen and (max-width: 582px) {
@@ -484,6 +506,16 @@ border: 3px solid #f1f1f1;
 
   .coverpic {
     display: none;
+  }
+
+  #loginform {
+  position: absolute;
+  left: 100px;
+  }
+
+  #container {
+    position: absolute;
+    left: 100px;
   }
 }
 
@@ -516,6 +548,16 @@ border: 3px solid #f1f1f1;
   .coverpic {
     display: none;
   }
+
+  #loginform {
+    position: absolute;
+    left: 80px;
+    }
+
+    #container {
+      position: absolute;
+      left: 80px;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -593,4 +635,9 @@ border: 3px solid #f1f1f1;
   .coverpic {
     display: none;
   }
+
+  #loginform {
+    position: absolute;
+    left: 60px;
+    }
 }
