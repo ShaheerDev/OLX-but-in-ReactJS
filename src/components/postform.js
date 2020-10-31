@@ -62,11 +62,9 @@ export default class Postform extends React.Component {
         <select id="category">
           <option value="Mobile Phones">Mobile Phones</option>
           <option value="Electronics">Electronics</option>
-          <option value="Cars">Cars</option>
-          <option value="Motorcycles">Motorcycles</option>
           <option value="Vehicles">Vehicles</option>
+          <option value="Motorcycles">Motorcycles</option>
           <option value="Houses">Houses</option>
-          <option value="Animals">Animals</option>
           <option value="Fashion and Beauty">Fashion and Beauty</option>
           <option value="Books, Sports and Hobbies">Books, Sports and Hobbies</option>
           <option value="Business">Business</option>
