@@ -31,15 +31,7 @@ export default class Search extends React.Component {
   } 
 
     return(<>
-            {/*
-        <select style={{position: "relative", left: 190, top: 20, height: 37}}>
-        <option value="All">All</option>
-        <option value="Pakistan">Pakistan</option>
-        <option value="India">India</option>
-        <option value="Canada">Canada</option>
-      </select>
-      */}
-      <textarea className="searchbox" rows="2" cols="120" id="searchbar"></textarea>
+      <textarea className="searchbox" rows="2" cols="115" id="searchbar"></textarea>
       <button onClick={searchads} className="searchbtn">Search </button>
     </>)
   }
