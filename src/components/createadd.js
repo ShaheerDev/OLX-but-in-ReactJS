@@ -36,7 +36,7 @@ export default class Createadd extends React.Component {
 
   render(){
     return(<>
-      <Logo />
+    <a href="/"><Logo /></a>
       <div id="loginform">
           <h1>You need to login</h1>
           <h1 style={{position: "absolute", top: "35px"}}> to continue</h1>
