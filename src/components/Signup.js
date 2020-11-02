@@ -4,7 +4,7 @@ import '../App.css';
 import Home from './home';
 import Logo from './logo';
 
-export default class Createadd extends React.Component {
+export default class SignUp extends React.Component {
     submitform(){
       var email = document.getElementById("email")
       var password = document.getElementById("password")
@@ -25,7 +25,7 @@ export default class Createadd extends React.Component {
 
   render(){
     return(<>
-      <Logo />
+    <a href="/"><Logo /></a>
       <div id="loginform">
           <h1>SignUp today</h1>
           <input type="text" placeholder="Email" style={{position: "absolute", top: "105px"}} id="email"></input>
