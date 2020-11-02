@@ -49,12 +49,14 @@ class LoggedHome extends React.Component {
       p.innerHTML = postname;
       const pcondition = document.createElement("p")
       pcondition.innerHTML = condition
+      pcondition.style.fontWeight = "bold"
       const pdescription = document.createElement("p")
       pdescription.innerHTML = postdescription
       const h1 = document.createElement("h1")
       h1.innerHTML = "Rs. " + postprice
       const ahref = document.createElement("a")
       ahref.href = whatsapplink
+      ahref.setAttribute("target", "_blank")
       const btn = document.createElement("button")
       btn.style.backgroundColor = "green"
       btn.style.width = "150px"
@@ -66,8 +68,8 @@ class LoggedHome extends React.Component {
       div.setAttribute("id", category)
       div.setAttribute("class", "floatleft")
       div.style.border = "4px solid white"
-      div.style.width = "228px"
-      div.style.height = "450px"
+      div.style.width = "268px"
+      div.style.height = "500px"
       div.appendChild(img)
       div.appendChild(p)
       div.appendChild(pcondition)
