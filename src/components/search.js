@@ -27,11 +27,12 @@ export default class Search extends React.Component {
                   break;
           }
       }
-  }
+      //setTimeout(function(){ window.location.reload() }, 10000);         
+    }
   } 
 
     return(<>
-      <textarea className="searchbox" rows="2" cols="115" id="searchbar"></textarea>
+      <textarea className="searchbox" rows="2" cols="115" id="searchbar" placeholder="This search box is not case-sensitive. Enter the exact words"></textarea>
       <button onClick={searchads} className="searchbtn">Search </button>
     </>)
   }
